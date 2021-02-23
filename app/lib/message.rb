@@ -30,4 +30,8 @@ class Message
   def self.expired_token
     'Sorry, your token has expired. Please login to continue.'
   end
+
+  def self.email_taken
+    'Sorry, this e-mail is already in use.'
+  end
 end

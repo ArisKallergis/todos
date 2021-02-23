@@ -4,6 +4,10 @@ class UsersController < ApplicationController
   # POST /signup
   # return authenticated token upon signup
   def create
+    check = User.find_by(email: user_params[:email])
+    if check
+      raise(ExceptionHandler::AuthenticationError, Message.email_taken)
+    end
     user = User.create!(user_params)
     auth_token = AuthenticateUser.new(user.email, user.password).call
     response = { message: Message.account_created, auth_token: auth_token }
