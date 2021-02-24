@@ -20,12 +20,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos"
 							]
@@ -57,12 +55,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos?title=Mozart",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos?title=Mozart",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos"
 							],
@@ -88,12 +84,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}"
@@ -114,12 +108,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}?title=Beethoven",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}?title=Beethoven",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}"
@@ -146,12 +138,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}"
@@ -177,22 +167,14 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}/items?",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}/items",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}",
 								"items"
-							],
-							"query": [
-								{
-									"key": "",
-									"value": null
-								}
 							]
 						}
 					},
@@ -222,12 +204,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}/items/?name=Listen to 5th Symphony&done=false",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}/items/?name=Listen to 5th Symphony&done=false",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}",
@@ -260,12 +240,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}/items/{{todo-item-id}}",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}/items/{{todo-item-id}}",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}",
@@ -288,12 +266,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}/items/{{todo-item-id}}/?done=true",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}/items/{{todo-item-id}}/?done=true",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}",
@@ -323,12 +299,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/todos/{{todo-id}}/items/{{todo-item-id}}",
-							"protocol": "http",
+							"raw": "{{host-url}}/todos/{{todo-id}}/items/{{todo-item-id}}",
 							"host": [
-								"localhost"
+								"{{host-url}}"
 							],
-							"port": "3000",
 							"path": [
 								"todos",
 								"{{todo-id}}",
@@ -363,12 +337,10 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/signup?name=John&email=johndoe444@gmail.com&password=123456&password_confirmation=123456",
-					"protocol": "http",
+					"raw": "{{host-url}}/signup?name=John&email=johndoe444@gmail.com&password=123456&password_confirmation=123456",
 					"host": [
-						"localhost"
+						"{{host-url}}"
 					],
-					"port": "3000",
 					"path": [
 						"signup"
 					],
@@ -412,12 +384,10 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/auth/login?email=johndoe666@gmail.com&password=123456",
-					"protocol": "http",
+					"raw": "{{host-url}}/auth/login?email=johndoe444@gmail.com&password=123456",
 					"host": [
-						"localhost"
+						"{{host-url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"login"
@@ -425,7 +395,7 @@
 					"query": [
 						{
 							"key": "email",
-							"value": "johndoe666@gmail.com"
+							"value": "johndoe444@gmail.com"
 						},
 						{
 							"key": "password",
